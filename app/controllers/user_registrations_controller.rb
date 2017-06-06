@@ -6,7 +6,4 @@ class UserRegistrationsController < ApplicationController
     end
   end
 
-  def new
-  end
-  
 end
