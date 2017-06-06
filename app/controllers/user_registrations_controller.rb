@@ -5,4 +5,8 @@ class UserRegistrationsController < ApplicationController
       UserMailer.welcome(@user).deliver_now
     end
   end
+
+  def new
+  end
+  
 end
