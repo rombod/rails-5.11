@@ -17,10 +17,19 @@ Rails.application.configure do
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
-  config.public_file_server.enabled = true
-  RAILS_SERVE_STATIC_FILES = true
-  
-  config.assets.precompile += %w(*.js)
+
+
+
+
+  # Disable Rails's static asset server (Apache or nginx will already do this)
+config.serve_static_assets = false
+
+# Generate digests for assets URLs
+config.assets.digest = true
+
+
+
+
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
