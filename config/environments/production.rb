@@ -21,6 +21,7 @@ Rails.application.configure do
 
 
 
+config.assets.digest = true
   
 
 
