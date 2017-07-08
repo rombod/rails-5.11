@@ -30,6 +30,10 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# sendgrid
+ gem 'sendgrid-ruby'
+
+
 gem 'devise'
 gem 'cancancan'
 gem 'will_paginate', '~> 3.1.0'
