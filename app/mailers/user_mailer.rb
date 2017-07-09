@@ -8,10 +8,11 @@ mail(:from => email, :to => 'mahmood.madgidi@farauto.ca', :subject => "A new con
 end 
 
 def welcome(user)
-  	@user = user
-  	@appname = "rails-5.11"
-  	mail(to: user.email, subject: "Welcome to #{@appname}!")
-	end
+    @user = user
+    mail(to: user.email,
+      subject: "Welcome!")
+
+  end
 
 def thank_you
     @name = params[:name]
